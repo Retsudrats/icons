@@ -18,12 +18,12 @@ Page = React.createClass
               </div>
               <div column>
                 <img src={"https://static.f-list.net/images/eicon/#{@state.icon}.gif?#{Date.now()}"}/>
-                <input ui inverted input value={"[eicon]#{@state.icon}[/eicon]"} onChange={->} onClick={@onClick}/>
+                <input ui input value={"[eicon]#{@state.icon}[/eicon]"} onChange={->} onClick={@onClick}/>
               </div>
             </div>
             <br/>
             <div ui field>
-              <input id="icon" ui inverted input onKeyUp={@onChange} onClick={@onClick} placeholder="Icon Name..." />
+              <input id="icon" ui input onKeyUp={@onChange} onClick={@onClick} placeholder="Icon Name..." />
             </div>
           </form>
         </div>
