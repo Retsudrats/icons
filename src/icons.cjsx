@@ -13,11 +13,11 @@ Page = React.createClass
           <form ui form onSubmit={(event) -> event.preventDefault()}>
             <div ui two column grid>
               <div column>
-                <img src={"https://static.f-list.net/images/avatar/#{@state.icon}.png?#{Date.now()}"}/>
+                <img src={"https://static.f-list.net/images/avatar/"+icon+".png?#{Date.now()}"}/>
                 <input ui input value={"[icon]#{@state.icon}[/icon]"} onChange={->} onClick={@onClick}/>
               </div>
               <div column>
-                <img src={"https://static.f-list.net/images/eicon/#{@state.icon}.gif?#{Date.now()}"}/>
+                <img src={"https://static.f-list.net/images/eicon/"+icon+".gif?#{Date.now()}"}/>
                 <input ui input value={"[eicon]#{@state.icon}[/eicon]"} onChange={->} onClick={@onClick}/>
               </div>
             </div>
