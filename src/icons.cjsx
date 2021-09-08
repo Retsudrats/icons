@@ -1,5 +1,12 @@
 {Aui, Bacon, React} = require './deps.cjsx'
 
+Page = React.createClass
+  getInitialState: -> icon: ''
+  onClick: (event) ->
+    event.target.select()
+  onChange: (event) ->
+    @setState icon: event.target.value
+  render: ->
     <Aui>
       <div ui page grid>
         <div ui inverted segment column>
